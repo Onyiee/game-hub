@@ -40,9 +40,10 @@ function App() {
       <GridItem area="main">
         <PlatformSelector
           selectedPlatform={gameQuery.platform}
-          onSelectPlatform={(platform) =>
-            setGameQuery({ ...gameQuery, platform })
-          }
+          onSelectPlatform={(platform) => {
+            console.log("Platform selected in App:", platform.name);
+            setGameQuery({ ...gameQuery, platform });
+          }}
         />
         <GameGrid gameQuery={gameQuery} />
       </GridItem>

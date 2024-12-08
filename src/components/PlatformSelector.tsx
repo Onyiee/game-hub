@@ -17,17 +17,21 @@ const PlatformSelector = ({ onSelectPlatform, selectedPlatform }: Props) => {
     <Menu>
       <MenuButton as={Button} rightIcon={<BsChevronDown />}>
         {selectedPlatform?.name || "Platforms"}
-        <MenuList>
-          {data.map((platform) => (
-            <MenuItem
-              onClick={() => onSelectPlatform(platform)}
-              key={platform.id}
-            >
-              {platform.name}
-            </MenuItem>
-          ))}
-        </MenuList>
       </MenuButton>
+
+      <MenuList>
+        {data.map((platform) => (
+          <MenuItem
+            key={platform.id}
+            onClick={() => {
+              console.log("Selected platform:", platform.name);
+              onSelectPlatform(platform);
+            }}
+          >
+            {platform.name}
+          </MenuItem>
+        ))}
+      </MenuList>
     </Menu>
   );
 };
