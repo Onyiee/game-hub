@@ -9578,4 +9578,4 @@ export default [
         }
       ]
     }
-  ]
+  ];
