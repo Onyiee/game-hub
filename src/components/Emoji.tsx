@@ -1,6 +1,6 @@
-import thumbsUp from "../assets/thumbsup.svg";
-import meh from "../assets/meh.svg";
 import bullsEye from "../assets/bullseye.svg";
+import thumbsUp from "../assets/thumbs-up.svg";
+import meh from "../assets/meh.svg";
 import { ImageProps, Image } from "@chakra-ui/react";
 
 interface Props {
