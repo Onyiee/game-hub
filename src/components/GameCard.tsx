@@ -4,6 +4,7 @@ import PlatformIconList from "./PlatformIconList";
 import CriticScore from "./CriticScore";
 import getCroppedImageUrl from "../services/image-urls";
 import Emoji from "./Emoji";
+import { Game } from "../hooks/useGames";
 
 interface Props {
   game: Game;
